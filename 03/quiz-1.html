@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>웹 브라우저 창에 표시하기</title>
+	<style>
+		#result {
+			background-color: pink;
+			text-align: center;
+			padding: 0 20px;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="result"></div>
+	<script>
+		let contents = prompt('내용을 입력하세요');
+		document.querySelector('#result').innerHTML = contents;
+	</script>
+
+</body>
+</html>
